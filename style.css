@@ -1,0 +1,43 @@
+html,body{
+    padding: 0;
+    margin:0;
+}
+
+.main-name{
+    text-align: center;
+    font-family: "Seymour One", sans-serif;
+    font-size: 20vh;
+}
+
+.seymour-one-regular {
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+
+.endpage-content{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.mainpage-content{
+    background-color: black;
+}
+
+.swift-ico{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: width 0.5s, height 0.5s;
+    -webkit-transition: width 0.5s, height 0.5s;
+    -moz-transition: width 0.5s, height 0.5s;
+    -ms-transition: width 0.5s, height 0.5s;
+    -o-transition: width 0.5s, height 0.5s;
+}
+.swift-ico:hover{
+    width: 200px;
+    height: 200px;
+}
