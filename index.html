@@ -10,30 +10,23 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.4.5/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/EkbZSh6GIvF1wnvm/scene.splinecode"></spline-viewer>
+            <spline-viewer id="main-spline" url="https://prod.spline.design/EkbZSh6GIvF1wnvm/scene.splinecode"></spline-viewer>
         </div>
-    </div>
 
 
     <script>
         const c = document.getElementById("main-spline");
         function rc() {
         c.width = window.innerWidth;
-        c.height = 1000;
+        c.height = 2500;
         }
         window.addEventListener("resize", rc);
         rc();
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- <script>
-        gsap.to(".main-name", {
-        duration:1.5,
-        y:350,
-        ease: "power1.out",
-        });
-    </script> -->
+
+
 
 
 <div class="mainpage-content">
@@ -57,21 +50,38 @@
     <br>
     <br>
     <br>
-    <img class="swift-ico" src="https://developer.apple.com/swift/images/swift-og.png">
-
-
-
-</div>
-
-<div class="endpage-content">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <img class="swift-ico" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
+    <img class="swift-ico" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
 
 </div>
 
+<div class="endpage-content ">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<hr>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+    const hh = 1850;
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('.swift-ico', {
+        x: hh,
+        duration: 1,
+        ease: "power4.inOut",
+        scrollTrigger: {
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: true
+        }
+    });
+</script>
 </body>
 </html>

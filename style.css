@@ -22,7 +22,7 @@ html,body{
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 .mainpage-content{
-    background-color: black;
+    background-color: #06070a;
 }
 
 .swift-ico{
@@ -31,13 +31,32 @@ html,body{
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    transition: width 0.5s, height 0.5s;
-    -webkit-transition: width 0.5s, height 0.5s;
-    -moz-transition: width 0.5s, height 0.5s;
-    -ms-transition: width 0.5s, height 0.5s;
-    -o-transition: width 0.5s, height 0.5s;
+    height: 35vh;
+    width: 65vh;
+    align-items: center;
+    opacity: 0.6;
+    transition: opacity 0.5s border;
+    -webkit-transition: opacity 0.5s border;
+    -moz-transition: opacity 0.5s border;
+    -ms-transition: opacity 0.5s border;
+    -o-transition: opacity 0.5s border;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
 }
 .swift-ico:hover{
-    width: 200px;
-    height: 200px;
+    /*border-color: white;
+    */border-style: solid;
+    opacity: 1;
+    border: 15px solid transparent;
+    border-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-image-slice: 1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
+
+
