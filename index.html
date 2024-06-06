@@ -9,11 +9,8 @@
 <body>
     <div id="smooth-wrapper">
         <div id="smooth-content">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.4.5/build/spline-viewer.js"></script>
-            <spline-viewer id="main-spline" url="https://prod.spline.design/EkbZSh6GIvF1wnvm/scene.splinecode"></spline-viewer>
-        </div>
-
-
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.5.2/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/LBCn8hKluvYujxW3/scene.splinecode" class="spline"></spline-viewer>
     <script>
         const c = document.getElementById("main-spline");
         function rc() {
@@ -51,8 +48,11 @@
     <br>
     <br>
     <img class="swift-ico" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
+    <br>
     <img class="swift-ico" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
-
+    <br>
+    <img class="swift-ico" src="https://media.istockphoto.com/id/997461858/photo/attractive-young-man-in-blue-t-shirt-pointing-up-with-his-finger-isolated-on-gray-background.jpg?s=612x612&w=0&k=20&c=70pkYuhz65EqNOB9qI5JSDXNbQUwGLxKTCgsSWoy4kM=">
+    <br>
 </div>
 
 <div class="endpage-content ">
@@ -61,23 +61,25 @@
     <br>
     <br>
     <br>
+  
+</div>
+</div>
+</div>
 
-</div>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <hr>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script>
-    const hh = 1850;
+    const hh = 3800;
     gsap.registerPlugin(ScrollTrigger);
     gsap.to('.swift-ico', {
         x: hh,
-        duration: 1,
-        ease: "power4.inOut",
+        duration: 5,
+        ease: "power.inOut",
         scrollTrigger: {
-            start: 'top center',
-            end: 'bottom center',
+            start: 'top left',
+            end: 'bottom right',
             scrub: true,
             markers: true
         }
