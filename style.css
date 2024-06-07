@@ -4,14 +4,12 @@
     font-style: normal;
 }
 
-
 html, body {
     padding: 0;
     margin: 0;
     background-color: #06070a;
     font-family: "Seymour One", sans-serif;
 }
-
 
 .swift-ico {
     border-radius: 30px;
@@ -20,24 +18,36 @@ html, body {
     align-items: center;
     opacity: 0.6;
     transition: opacity 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
+    margin:5vh;
 }
 
 .swift-ico:hover {
     opacity: 1;
     border-image-slice: 1;
-    box-shadow: 0px 0px 166px 60px rgba(255,0,0,0.9);
-}
+    -webkit-box-shadow:0px 0px 105px 45px rgba(64,201,219,0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(64,201,219,0.9);
+    box-shadow: 0px 0px 105px 45px rgba(64,201,219,0.9);}
 
 .tooltip {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transition: opacity 0.3s ease; 
-        }
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateY(-325px);
+}
 
-        .swift-ico:hover + .tooltip {
-            opacity: 1; 
-        }
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.swift-ico:hover + .tooltip {
+    opacity: 1;
+}
+
+.newimg{
+    margin-left: auto;
+}

@@ -22,29 +22,33 @@
 
 <spline-viewer class="front-page-spline" url="https://prod.spline.design/LBCn8hKluvYujxW3/scene.splinecode"></spline-viewer>
 
-
-
 <div class="mainpage-content">
-
-    <img class="swift-ico" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
-    <div class="tooltip">
-        <img class="newimg"src="https://developer.apple.com/swift/images/swift-og.png" height="500px" width="500px">
-    </div>
-
-    <br>
-    <img class="swift-ico" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
-    <div class="tooltip">
-            <h2>Title 2</h2>
-            <p>Description 2</p>
+    <div class="icon-container">
+        <img class="swift-ico" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
+        <div class="tooltip">
+            <img class="newimg" src="https://developer.apple.com/swift/images/swift-og.png" height="300px" width="300px">
         </div>
+    </div>
     <br>
-    <img class="swift-ico" src="https://media.istockphoto.com/id/997461858/photo/attractive-young-man-in-blue-t-shirt-pointing-up-with-his-finger-isolated-on-gray-background.jpg?s=612x612&w=0&k=20&c=70pkYuhz65EqNOB9qI5JSDXNbQUwGLxKTCgsSWoy4kM=">
+    <div class="icon-container">
+        <img class="swift-ico" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
+        <div class="tooltip" id="tt2">
+            <img class="newimg" src="https://tapinto-production.s3.amazonaws.com/uploads/photos/im/best_crop_7fb958872f569244a824_image001__1_.jpg?id=4374285" height="300px" width="300px">
+        </div>
+    </div>
     <br>
-
+    <div class="icon-container">
+        <img class="swift-ico" src="https://media.istockphoto.com/id/997461858/photo/attractive-young-man-in-blue-t-shirt-pointing-up-with-his-finger-isolated-on-gray-background.jpg?s=612x612&w=0&k=20&c=70pkYuhz65EqNOB9qI5JSDXNbQUwGLxKTCgsSWoy4kM=">
+        <div class="tooltip">
+            <img class="newimg" src="https://investorplace.com/wp-content/uploads/2018/05/videogamemsn-compressor-1.jpg" height="300px" width="300px">
+        </div>
+    </div>
 </div>
-<script>
 
-    const hh = 1590;
+<script>
+    const hh = window.innerWidth - 500;
+</script>
+<script>
     gsap.registerPlugin(ScrollTrigger);
     gsap.to('.swift-ico', {
         x: Math.abs(hh),
@@ -57,12 +61,24 @@
             onComplete: showTooltips
         }
     });
+
     function showTooltips() {
+        
+
+        gsap.to('.newimg', 
+        {
+            x: 400,
+            duration: 5,
+            ease: "power.inOut",
+        });    
+
         document.querySelectorAll('.tooltip').forEach(function (tooltip) {
             tooltip.style.opacity = 1; 
-                gsap.fromTo(tooltip, { y: "-100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out" });
-
+            gsap.fromTo(tooltip, { y: "-100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out" });
         });
+
+            
+
     }
 </script>
 </body>
