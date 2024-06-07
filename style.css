@@ -1,81 +1,43 @@
-html,body{
-    padding: 0;
-    margin:0;
-    background-color: #06070a;
-
-}
-
-.main-name{
-    text-align: center;
-    font-family: "Seymour One", sans-serif;
-    font-size: 20vh;
-}
-
 .seymour-one-regular {
     font-family: "Seymour One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-
-  
-
-.endpage-content{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
-.mainpage-content{
+
+
+html, body {
+    padding: 0;
+    margin: 0;
     background-color: #06070a;
+    font-family: "Seymour One", sans-serif;
 }
 
-.swift-ico{
+
+.swift-ico {
     border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
     height: 35vh;
     width: 65vh;
     align-items: center;
     opacity: 0.6;
-    transition: opacity 0.5s border border-image 0.5s border-radius 0.5s border-image 2s ;
-    transition: -webkit-box-shadow 0.5s;
-    -webkit-transition: -webkit-box-shadow 0.5s;
-    -moz-transition: -webkit-box-shadow 0.5s;
-    -ms-transition: -webkit-box-shadow 0.5s;
-    -o-transition: -webkit-box-shadow 0.5s;
+    transition: opacity 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
 }
-.swift-ico:hover{
+
+.swift-ico:hover {
     opacity: 1;
-    border: 15px solid transparent;
-    border-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     border-image-slice: 1;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    -webkit-box-shadow:0px 0px 166px 60px rgba(255,0,0,0.9);
-    -moz-box-shadow: 0px 0px 166px 60px rgba(255,0,0,0.9);
     box-shadow: 0px 0px 166px 60px rgba(255,0,0,0.9);
 }
 
-.opening-class{
-    font-size: 500px;
-    border: 15px solid transparent;
-    border-image-slice: 1;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    -webkit-box-shadow:0px 0px 166px 60px rgba(255,0,0,0.9);
-    -moz-box-shadow: 0px 0px 166px 60px rgba(255,0,0,0.9);
-    box-shadow: 0px 0px 166px 60px rgba(255,0,0,0.9);
-    font-family: "Seymour One", sans-serif;
-    text-align: center;
-}
+.tooltip {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease; 
+        }
 
-.spline{
-    height: 5000px;
-    width: 5000px;
-}
+        .swift-ico:hover + .tooltip {
+            opacity: 1; 
+        }
