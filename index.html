@@ -1,113 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.5.4/build/spline-viewer.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Include your external CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <style>
-        .front-page-spline spline-viewer {
-            width: 400vh;
-            height: 400vh;
-        }
-    </style>
-    <title></title>
+    <title>Responsive Spline Viewer</title>
 </head>
 <body>
-<div id="smooth-wrapper">
-<div id="smooth-content">
-<spline-viewer class="front-page-spline" url="https://prod.spline.design/LBCn8hKluvYujxW3/scene.splinecode"></spline-viewer>
+    <div id="smooth-wrapper" class="custom-cursor">
+        <div id="smooth-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <spline-viewer class="front-page-spline" url="https://prod.spline.design/LBCn8hKluvYujxW3/scene.splinecode"></spline-viewer>
+                    </div>
+                </div>
+            </div>
+            <div class="mainpage-content container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="abt-text">About Me:</h1>
+                        <h3 class="abt-text blcy">bio here</h1>
 
-
-
-
-
-<div class="mainpage-content">
-    <h1 class="abt-text">About Me:</h1>
-    <div class="icon-container">
-        <img class="swift-ico" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
-        <div class="tooltip">
-            <img class="newimg" src="https://developer.apple.com/swift/images/swift-og.png" height="300px" width="300px">
-
-            <h4 class="sw-text"> YAP YAP YAP YAP YAP YAP YAP YAP</h4>
-
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="icon-container">
+                            <img class="swift-ico img-fluid" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
+                            <div class="tooltip">
+                                <img class="tooltip-img img-fluid" src="https://developer.apple.com/swift/images/swift-og.png">
+                                <h4 class="sw-text">YAP YAP YAP YAP YAP YAP YAP YAP</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="icon-container">
+                            <img class="swift-ico img-fluid" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
+                            <div class="tooltip">
+                                <img class="tooltip-img img-fluid" src="https://tapinto-production.s3.amazonaws.com/uploads/photos/im/best_crop_7fb958872f569244a824_image001__1_.jpg?id=4374285">
+                                <h4 class="sw-text">YAP YAP YAP YAP YAP YAP YAP YAP</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="icon-container">
+                            <img class="swift-ico img-fluid" src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzBiN2Y0ZTliLWY1OWMtNDAyNC05ZjA2LWIzZGMxMjg1MGFiNy0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0=">
+                            <div class="tooltip">
+                                <img class="tooltip-img img-fluid" src="https://investorplace.com/wp-content/uploads/2018/05/videogamemsn-compressor-1.jpg">
+                                <h4 class="sw-text">YAP YAP YAP YAP YAP YAP YAP YAP</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <br>
-    <div class="icon-container">
-        <img class="swift-ico" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
-        <div class="tooltip" id="tt2">
-            <img class="newimg" src="https://tapinto-production.s3.amazonaws.com/uploads/photos/im/best_crop_7fb958872f569244a824_image001__1_.jpg?id=4374285" height="300px" width="300px">
-            <h4 class="sw-text"> YAP YAP YAP YAP YAP YAP YAP YAP</h4>
-
-        </div>
-    </div>
-    <br>
-    <div class="icon-container">
-        <img class="swift-ico" src="https://media.istockphoto.com/id/997461858/photo/attractive-young-man-in-blue-t-shirt-pointing-up-with-his-finger-isolated-on-gray-background.jpg?s=612x612&w=0&k=20&c=70pkYuhz65EqNOB9qI5JSDXNbQUwGLxKTCgsSWoy4kM=">
-        <div class="tooltip">
-            <img class="newimg" src="https://investorplace.com/wp-content/uploads/2018/05/videogamemsn-compressor-1.jpg" height="300px" width="300px">
-            <h4 class="sw-text"> YAP YAP YAP YAP YAP YAP YAP YAP</h4>
-
-        </div>
-    </div>
-</div>
-</div>
-</div>
-<script>
-    const hh = window.innerWidth - 500;
-</script>
-<script>
-
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to('.swift-ico', {
-        x: Math.abs(hh),
-        duration: 5,
-        ease: "power.inOut",
-        scrollTrigger: {
-            start: 'top left',
-            end: 'bottom right',
-            scrub: true,
-            onComplete: showTooltips
-        }
-    });
-
-    function showTooltips() {
+    <script>
+        const hh = window.innerWidth - 500;
         
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.set('.icon-container', { y: -1000 });
 
-        gsap.to('.newimg', 
-        {
-            x: 400,
-            duration: 5,
-            ease: "power.inOut",
-        });    
-
-        document.querySelectorAll('.tooltip').forEach(function (tooltip) {
-            tooltip.style.opacity = 1; 
-            gsap.fromTo(tooltip, { y: "-100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out" });
+        gsap.to('.icon-container', {
+            y: 100, 
+            duration: 1, 
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: '.icon-container',
+                start: 'top 80%', 
+                end: 'bottom top', 
+                scrub: true 
+            }
         });
 
-            
+        function showTooltips() {
+            gsap.to('.newimg', {
+                y: 4000,
+                duration: 5,
+                ease: "power.inOut",
+            });
 
-    }
-gsap.to('.abt-text', {
-        y: Math.abs(5000),
-        duration: 5,
-        ease: "power.inOut",
-        scrollTrigger: {
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: true,
+            document.querySelectorAll('.tooltip').forEach(function (tooltip) {
+                tooltip.style.opacity = 1; 
+                gsap.fromTo(tooltip, { y: "-100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out" });
+            });
         }
-    });
 
-
-</script>
-
+        gsap.to('.abt-text', {
+            y: 0,
+            opacity: 1,
+            duration: 6, 
+            ease: "bounce.out",
+            scrollTrigger: {
+                trigger: '.abt-text',
+                start: 'top 80%',
+                end: 'bottom top',
+                scrub: true,
+                toggleActions: 'play none none reverse'
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,68 +1,79 @@
-.josefin-sans-a1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 3px;
-  font-style: normal;
-}
 html, body {
     padding: 0;
     margin: 0;
-    background-color: #06070a;
-    font-family: "Seymour One", sans-serif;
+    background-color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.front-page-spline {
+    width: 100%;
+    height: 100vh;
+}
+
+.abt-text {
+    text-align: center;
+    font-size: 150px;
+    background-image: linear-gradient(to right, #00ffff, #ff0080);
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+}
+
+.icon-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
 }
 
 .swift-ico {
     border-radius: 30px;
-    height: 35vh;
-    width: 65vh;
-    align-items: center;
+    width: 300px; 
+    height: 150px;
     opacity: 0.6;
     transition: opacity 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
-    margin:5vh;
+    margin: 5vh;
 }
 
 .swift-ico:hover {
     opacity: 1;
     border-image-slice: 1;
-    -webkit-box-shadow:0px 0px 105px 45px rgba(64,201,219,0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(64,201,219,0.9);
-    box-shadow: 0px 0px 105px 45px rgba(64,201,219,0.9);}
+    box-shadow: 0px 0px 105px 45px rgba(64, 201, 219, 0.9);
+}
 
 .tooltip {
     position: absolute;
     padding: 10px;
     border-radius: 10px;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 0.3s ease;
-    transform: translateY(-325px);
-    padding-left: 350px;
-
+    text-align: center;
+    width: 300px; 
+    bottom: -180px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.icon-container {
-    position: relative;
-    display: inline-block;
+.tooltip-img {
+    width: 100px; 
+    height: auto;
 }
 
 .swift-ico:hover + .tooltip {
     opacity: 1;
 }
 
-.newimg{
-    margin-left: auto;
+.custom-cursor {
+    cursor: url('C:\Users\Skavv\Downloads\Portfolio-MCST-1B-main\cursor.png'), auto;
 }
 
-.sw-text{
-    font-family: "Seymour One", sans-serif;
-    color: white;
-}
-
-.abt-txt{
-    font-family: "Seymour One", sans-serif;
-    text-align: center;
-    font-size: 150px;
-    background-image: linear-gradient(to right, #00f7ff, #dd3f58);
-    background-clip: text;
-    color: transparent;
+.blcy{
+    color: black;
+    font-size: 25px;
 }
