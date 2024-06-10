@@ -29,7 +29,7 @@ html, body {
 
 .swift-ico {
     border-radius: 30px;
-    width: 300px; 
+    width: 300px;
     height: 150px;
     opacity: 0.6;
     transition: opacity 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
@@ -38,7 +38,6 @@ html, body {
 
 .swift-ico:hover {
     opacity: 1;
-    border-image-slice: 1;
     box-shadow: 0px 0px 105px 45px rgba(64, 201, 219, 0.9);
 }
 
@@ -51,8 +50,8 @@ html, body {
     opacity: 0;
     transition: opacity 0.3s ease;
     text-align: center;
-    width: 300px; 
-    bottom: -180px; 
+    width: 300px;
+    bottom: -180px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -61,7 +60,7 @@ html, body {
 }
 
 .tooltip-img {
-    width: 100px; 
+    width: 100px;
     height: auto;
 }
 
@@ -70,10 +69,23 @@ html, body {
 }
 
 .custom-cursor {
-    cursor: url('C:\Users\Skavv\Downloads\Portfolio-MCST-1B-main\cursor.png'), auto;
+    cursor: url('C/Users/guesty/Documents/portfolio proj/cursor.png'), auto;
 }
 
-.blcy{
+.blcy {
     color: black;
     font-size: 25px;
 }
+
+.carousel-caption-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+
