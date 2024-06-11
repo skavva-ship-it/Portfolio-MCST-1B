@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <title>Responsive Spline Viewer</title>
+    <title>Portfolio PROJ</title>
 </head>
 <body>
     <div id="smooth-wrapper" class="custom-cursor">
@@ -35,7 +35,7 @@
                             <img class="swift-ico img-fluid" src="https://photos5.appleinsider.com/gallery/0-60476-xcode-1-xl.jpg">
                             <div class="tooltip">
                                 <img class="tooltip-img img-fluid" src="https://developer.apple.com/swift/images/swift-og.png">
-                                <h4 class="sw-text">YAP YAP YAP YAP YAP YAP YAP YAP</h4>
+                                <h4 class="sw-text">Favorite Laungauge; Swift</h4>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                             <img class="swift-ico img-fluid" src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/WORKPLACEV9CMS/rrw3o6nw5eim_watjn7woa.jpg">
                             <div class="tooltip">
                                 <img class="tooltip-img img-fluid" src="https://tapinto-production.s3.amazonaws.com/uploads/photos/im/best_crop_7fb958872f569244a824_image001__1_.jpg?id=4374285">
-                                <h4 class="sw-text">YAP YAP YAP YAP YAP YAP YAP YAP</h4>
+                                <h4 class="sw-text">Student at MCST CIS Academy. Class of '26</h4>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                             <img class="swift-ico img-fluid" src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzBiN2Y0ZTliLWY1OWMtNDAyNC05ZjA2LWIzZGMxMjg1MGFiNy0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0=">
                             <div class="tooltip">
                                 <img class="tooltip-img img-fluid" src="https://investorplace.com/wp-content/uploads/2018/05/videogamemsn-compressor-1.jpg">
-                                <h4 class="sw-text">YAP YAP YAP YAP YAP YAP YAP YAP</h4>
+                                <h4 class="sw-text">Age: 16, Born in Februrary.</h4>
                             </div>
                         </div>
                     </div>
@@ -70,53 +70,102 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <div class="col-12">
+     <h1 class="abt-text abt-text2">Projects:</h1>
+</div>
 
     <iframe class="scrollframe"src="/Users/guesty/Documents/portfolio proj/caro.html" frameborder="0" width="100%" height="600"></iframe>
 
+    <div class="col-12">
+     <h1 class="abt-text abt-text2">Expierence:</h1>
+</div>
+    <iframe class="scrollframe"src="/Users/guesty/Documents/portfolio proj/tim.html" frameborder="0" width="100%" height="600"></iframe>
+    <br>
+    <iframe class="scrollframe"src="/Users/guesty/Documents/portfolio proj/navbar.html" frameborder="0" width="100%" height="600"></iframe>
+
+
+
     <script>
-        const hh = window.innerWidth - 500;
-        
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.set('.icon-container', { y: -1000 });
+    const hh = window.innerWidth - 500;
+    
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.set('.icon-container', { y: -1000 });
 
-        gsap.to('.icon-container', {
-            y: 100, 
-            duration: 1, 
-            ease: 'power1.inOut',
-            scrollTrigger: {
-                trigger: '.icon-container',
-                start: 'top 80%', 
-                end: 'bottom top', 
-                scrub: true 
-            }
-        });
-
-        function showTooltips() {
-            gsap.to('.newimg', {
-                y: 4000,
-                duration: 5,
-                ease: "power.inOut",
-            });
-
-            document.querySelectorAll('.tooltip').forEach(function (tooltip) {
-                tooltip.style.opacity = 1; 
-                gsap.fromTo(tooltip, { y: "-100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out" });
-            });
+    gsap.to('.icon-container', {
+        y: 100, 
+        duration: 1, 
+        ease: 'power1.inOut',
+        scrollTrigger: {
+            trigger: '.icon-container',
+            start: 'top 80%', 
+            end: 'bottom top', 
+            scrub: true 
         }
+    });
 
-        gsap.to('.abt-text', {
-            y: 0,
-            opacity: 1,
-            duration: 6, 
-            ease: "bounce.out",
-            scrollTrigger: {
-                trigger: '.abt-text',
-                start: 'top 80%',
-                end: 'bottom top',
-                scrub: true,
-                toggleActions: 'play none none reverse'
-            }
+    function showTooltips() {
+        gsap.to('.newimg', {
+            y: 4000,
+            duration: 5,
+            ease: "power.inOut",
         });
-    </script>
+
+        document.querySelectorAll('.tooltip').forEach(function (tooltip) {
+            tooltip.style.opacity = 1; 
+            gsap.fromTo(tooltip, { y: "-100%", opacity: 0 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out" });
+        });
+    }
+
+    gsap.to('.abt-text', {
+        y: 0,
+        opacity: 1,
+        duration: 6, 
+        ease: "bounce.out",
+        scrollTrigger: {
+            trigger: '.abt-text',
+            start: 'top 80%',
+            end: 'bottom top',
+            scrub: true,
+            toggleActions: 'play none none reverse'
+        }
+    });
+
+    gsap.to('.abt-text2', {
+        y: 0,
+        opacity: 1,
+        duration: 6, 
+        ease: "bounce.out",
+        scrollTrigger: {
+            trigger: '.abt-text2',
+            start: 'top 40%',
+            end: 'bottom top',
+            scrub: true,
+            toggleActions: 'play none none reverse'
+        }
+    });
+
+    gsap.to('.abt-text3', {
+        y: 0,
+        opacity: 1,
+        duration: 6, 
+        ease: "bounce.out",
+        scrollTrigger: {
+            trigger: '.abt-text3',
+            start: 'top 60%',
+            end: 'bottom top',
+            scrub: true,
+            toggleActions: 'play none none reverse'
+        }
+    });
+</script>
+
 </body>
 </html>
